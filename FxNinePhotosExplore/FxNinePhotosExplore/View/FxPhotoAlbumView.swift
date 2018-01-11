@@ -140,6 +140,7 @@ extension FxPhotoAlbumView {
 
 // MARK: - add constraints
 extension FxPhotoAlbumView {
+
     fileprivate func addConstraintToOnePhotos() {
         removeAllPhotosContraint()
         if let photo = getPhotoViewWithTag(tag: tagBase+0) {
@@ -152,6 +153,7 @@ extension FxPhotoAlbumView {
         }
     }
     
+
     fileprivate func addConstraintToTwoPhotos() {
         removeAllPhotosContraint()
         let photo = getPhotoViewWithTag(tag: tagBase+0)!
@@ -169,6 +171,7 @@ extension FxPhotoAlbumView {
             make.height.equalTo(imageWidth)
         })
     }
+    
     
     fileprivate func addConstraintToThreePhotos() {
         removeAllPhotosContraint()
@@ -206,6 +209,7 @@ extension FxPhotoAlbumView {
         })
     }
     
+
     fileprivate func addConstraintToFourPhotos_double2() {
         addConstraintToTwoPhotos()
         let photo2 = getPhotoViewWithTag(tag: tagBase+2)!
@@ -267,6 +271,7 @@ extension FxPhotoAlbumView {
         })
     }
     
+
     fileprivate func addConstraintToSevenPhotos() {
         addConstraintToSixPhotos()
         let photo6 = getPhotoViewWithTag(tag: tagBase+6)!
